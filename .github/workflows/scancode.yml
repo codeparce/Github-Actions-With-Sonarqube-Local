@@ -38,3 +38,8 @@ jobs:
           SONAR_PROJECT_KEY: ${{ github.repository }}
           SONAR_PROJECT_NAME: ${{ github.event.repository.name }}
           SONAR_BRANCH: ${{ github.ref_name }}
+        with:
+          args: >
+            -Dsonar.projectKey=tres-en-raya-${{ github.ref_name }}
+            -Dsonar.projectName=${{ github.event.repository.name }} ${{ github.ref_name }}
+    
