@@ -40,7 +40,8 @@ jobs:
           SONAR_BRANCH: ${{ github.ref_name }}
         with:
           args: >
-            -Dsonar.projectKey=tres-en-raya-${{ github.ref_name }}
-            -Dsonar.projectName= Tres en Raya
+            -Dsonar.projectKey=tres-en-raya-main
+            -Dsonar.projectName= TresenRaya
             -Dsonar.branch.name=${{ github.ref_name }}
+            -Dsonar.verbose=true
     
