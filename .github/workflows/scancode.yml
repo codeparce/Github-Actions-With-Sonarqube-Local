@@ -42,6 +42,5 @@ jobs:
           args: >
             -Dsonar.projectKey=tres-en-raya-main
             -Dsonar.projectName=TresenRaya
-            -Dsonar.branch.name=${{ github.ref_name }}
             -Dsonar.verbose=true
     
