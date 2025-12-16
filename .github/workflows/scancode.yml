@@ -1,0 +1,34 @@
+name: SonarQube Scan
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  ##pull_request:
+
+jobs:
+  sonarqube:
+    name: SonarQube Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # IMPORTANTE para análisis correcto
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: cd tres-en-raya && npm ci
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_PROJECT_KEY: ${{ github.repository }}
+          SONAR_PROJECT_NAME: ${{ github.event.repository.name }}
+          SONAR_BRANCH: ${{ github.ref_name }}
