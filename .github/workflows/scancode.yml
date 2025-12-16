@@ -24,6 +24,12 @@ jobs:
       - name: Install dependencies
         run: cd tres-en-raya && npm ci
 
+      - name: Debug GitHub vars
+        run: |
+          echo "Repo: ${{ github.repository }}"
+          echo "Repo name: ${{ github.event.repository.name }}"
+          echo "Branch: ${{ github.ref_name }}"
+
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v2
         env:
