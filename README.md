@@ -57,8 +57,15 @@ https://dashboard.ngrok.com/get-started/setup/windows
 
 ![alt text](/res/7.png)
 
+![alt text](/res/8.png)
+
 - En github ir a la siguiente configuracion y agregas el token y la url donde esta alojado tu host (que en este ejemplo sera ngrok)
 
 ![alt text](/res/5.png)
 
 ![alt text](/res/6.png)
+
+
+## Yyyy lisstoo con esto puedes follarte a la de recursos humanos 
+
+![alt text](/res/10.png)
