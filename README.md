@@ -65,6 +65,8 @@ https://dashboard.ngrok.com/get-started/setup/windows
 
 ![alt text](/res/6.png)
 
+- y ya cuando hagas push a main podras mirar tu scan en el sonar qube local en rutado con ngrok con unaarquitecturastandalonelevantadocondockercomposeporqueesmassensilloqueusarkubernetesigualesunejemplosimnple
+![alt text](11.png)
 
 ## Yyyy lisstoo con esto puedes follarte a la de recursos humanos 
 
