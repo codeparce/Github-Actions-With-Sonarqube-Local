@@ -41,5 +41,6 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=tres-en-raya-${{ github.ref_name }}
-            -Dsonar.projectName=${{ github.event.repository.name }} ${{ github.ref_name }}
+            -Dsonar.projectName= Tres en Raya
+            -Dsonar.branch.name=${{ github.ref_name }}
     
